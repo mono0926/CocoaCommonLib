@@ -16,7 +16,6 @@
 		FE25477117892DD600DF3C3D /* libCocoaCommonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE25475817892DD600DF3C3D /* libCocoaCommonLib.a */; };
 		FE25477717892DD600DF3C3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE25477517892DD600DF3C3D /* InfoPlist.strings */; };
 		FE25477A17892DD600DF3C3D /* CocoaCommonLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE25477917892DD600DF3C3D /* CocoaCommonLibTests.m */; };
-		FED7DDD31789321B00D1ADDA /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDCE1789321B00D1ADDA /* NSData+Base64.m */; };
 		FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD01789321B00D1ADDA /* NSDate+MN.m */; };
 		FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */; };
 		FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD71789322D00D1ADDA /* ModelManager.m */; };
@@ -60,8 +59,6 @@
 		FE25477617892DD600DF3C3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE25477817892DD600DF3C3D /* CocoaCommonLibTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaCommonLibTests.h; sourceTree = "<group>"; };
 		FE25477917892DD600DF3C3D /* CocoaCommonLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaCommonLibTests.m; sourceTree = "<group>"; };
-		FED7DDCD1789321B00D1ADDA /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		FED7DDCE1789321B00D1ADDA /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MN.h"; sourceTree = "<group>"; };
 		FED7DDD01789321B00D1ADDA /* NSDate+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MN.m"; sourceTree = "<group>"; };
 		FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MN.h"; sourceTree = "<group>"; };
@@ -182,8 +179,6 @@
 		FED7DDCC178931F000D1ADDA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				FED7DDCD1789321B00D1ADDA /* NSData+Base64.h */,
-				FED7DDCE1789321B00D1ADDA /* NSData+Base64.m */,
 				FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */,
 				FED7DDD01789321B00D1ADDA /* NSDate+MN.m */,
 				FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */,
@@ -354,7 +349,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED7DDD31789321B00D1ADDA /* NSData+Base64.m in Sources */,
 				FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */,
 				FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */,
 				FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */,
