@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license      = 'MIT'
   s.author       = { "Masayuki Ono" => "mono0926@gmail.com" }
   s.source       = { :git => "https://github.com/mono0926/CocoaCommonLib.git", :tag => "0.0.1" }
-  s.source_files = 'Classes', 'Classes/**/*.{h,m}'
+  s.source_files = 'CocoaCommonLib', 'CocoaCommonLib/**/*.{h,m}'
   s.exclude_files = 'Classes/Exclude'
   s.requires_arc = true
   s.dependency 'MKNetworkKit'

@@ -171,10 +171,10 @@
 		FED7DDCA1789319900D1ADDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 				FED7DDD61789322D00D1ADDA /* ModelManager.h */,
 				FED7DDD71789322D00D1ADDA /* ModelManager.m */,
 				FED7DDCC178931F000D1ADDA /* Utils */,
-				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
