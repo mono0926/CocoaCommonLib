@@ -1,0 +1,15 @@
+platform :ios, '7.0'
+
+inhibit_all_warnings!
+
+target :CocoaCommonLib, :exclusive => true do
+  pod 'BlocksKit'
+  pod 'RestKit'
+  pod 'Syringe'
+  pod 'CocoaLumberjack'
+end
+
+# Testing framework for Test target.
+target :CocoaCommonLibTests, :exclusive => true do
+  pod 'Kiwi'
+end
