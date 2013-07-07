@@ -6,6 +6,7 @@ target :CocoaCommonLib, :exclusive => true do
   pod 'BlocksKit'
   pod 'RestKit'
   pod 'Syringe'
+  pod 'MKNetworkKit'
   pod 'CocoaLumberjack'
 end
 
