@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CF65CC98-4531-4995-9080-FC28A5D86D1B</string>
+	<string>C0C8B377-0B3D-4277-8019-18F97AEF6D90</string>
 	<key>IDESourceControlProjectName</key>
 	<string>CocoaCommonLib</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1FE02DFB-D50C-401A-BB8C-172D6A195CF4</key>
+		<key>040D9EDE-011E-4765-BDE4-89E19A684A75</key>
 		<string>ssh://github.com/mono0926/CocoaCommonLib.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>CocoaCommonLib.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1FE02DFB-D50C-401A-BB8C-172D6A195CF4</key>
+		<key>040D9EDE-011E-4765-BDE4-89E19A684A75</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -23,14 +23,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1FE02DFB-D50C-401A-BB8C-172D6A195CF4</string>
+	<string>040D9EDE-011E-4765-BDE4-89E19A684A75</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1FE02DFB-D50C-401A-BB8C-172D6A195CF4</string>
+			<string>040D9EDE-011E-4765-BDE4-89E19A684A75</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CocoaCommonLib</string>
 		</dict>

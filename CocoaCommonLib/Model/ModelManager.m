@@ -65,7 +65,7 @@
                                          URL:storeURL
                                      options:nil
                                        error:&error];
-    NSAssert(error == nil, nil);
+    NSAssert(error == nil, error.description);
     return coord;
 }
 @end
