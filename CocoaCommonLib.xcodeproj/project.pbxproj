@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		03474A88DD1944A785C58369 /* libPods-CocoaCommonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F3CF3093A04595AA17030D /* libPods-CocoaCommonLib.a */; };
 		DB5961FD739F410794084E3C /* libPods-CocoaCommonLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1CD6FCDFCF4DFCBBFE25B1 /* libPods-CocoaCommonLibTests.a */; };
+		FE2263711792817A00BDA527 /* MNTestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2263701792817A00BDA527 /* MNTestUtil.m */; };
 		FE25475C17892DD600DF3C3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE25475B17892DD600DF3C3D /* Foundation.framework */; };
 		FE25476B17892DD600DF3C3D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE25476A17892DD600DF3C3D /* SenTestingKit.framework */; };
 		FE25476D17892DD600DF3C3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE25476C17892DD600DF3C3D /* UIKit.framework */; };
@@ -50,6 +51,8 @@
 		9C1CD6FCDFCF4DFCBBFE25B1 /* libPods-CocoaCommonLibTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaCommonLibTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F3CF3093A04595AA17030D /* libPods-CocoaCommonLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CocoaCommonLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53C7083B26D45429609CF91 /* Pods/Pods-CocoaCommonLibTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods/Pods-CocoaCommonLibTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		FE22636F1792817A00BDA527 /* MNTestUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNTestUtil.h; sourceTree = "<group>"; };
+		FE2263701792817A00BDA527 /* MNTestUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNTestUtil.m; sourceTree = "<group>"; };
 		FE25475817892DD600DF3C3D /* libCocoaCommonLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaCommonLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE25475B17892DD600DF3C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE25475F17892DD600DF3C3D /* CocoaCommonLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaCommonLib-Prefix.pch"; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 				FED7DDD61789322D00D1ADDA /* ModelManager.h */,
 				FED7DDD71789322D00D1ADDA /* ModelManager.m */,
+				FE22636F1792817A00BDA527 /* MNTestUtil.h */,
+				FE2263701792817A00BDA527 /* MNTestUtil.m */,
 				FED7DDCC178931F000D1ADDA /* Utils */,
 			);
 			path = Model;
@@ -370,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2263711792817A00BDA527 /* MNTestUtil.m in Sources */,
 				FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */,
 				FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */,
 				FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */,
