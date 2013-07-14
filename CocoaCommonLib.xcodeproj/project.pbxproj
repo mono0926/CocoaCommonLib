@@ -20,6 +20,7 @@
 		FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */; };
 		FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD71789322D00D1ADDA /* ModelManager.m */; };
 		FED7DDDB1789328900D1ADDA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED7DDDA1789328900D1ADDA /* CoreData.framework */; };
+		FEE70AD41790287300C6DF8F /* UIViewController+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE70AD31790287300C6DF8F /* UIViewController+MN.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		FED7DDD71789322D00D1ADDA /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
 		FED7DDD91789326E00D1ADDA /* MNCommonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNCommonModel.h; sourceTree = "<group>"; };
 		FED7DDDA1789328900D1ADDA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FEE70AD21790287300C6DF8F /* UIViewController+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MN.h"; sourceTree = "<group>"; };
+		FEE70AD31790287300C6DF8F /* UIViewController+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MN.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,7 @@
 		FE25475D17892DD600DF3C3D /* CocoaCommonLib */ = {
 			isa = PBXGroup;
 			children = (
+				FEE70AD01790283900C6DF8F /* View */,
 				FED7DDCA1789319900D1ADDA /* Model */,
 				FE25475E17892DD600DF3C3D /* Supporting Files */,
 			);
@@ -183,6 +187,23 @@
 				FED7DDD01789321B00D1ADDA /* NSDate+MN.m */,
 				FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */,
 				FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FEE70AD01790283900C6DF8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEE70AD11790285100C6DF8F /* Utils */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEE70AD11790285100C6DF8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FEE70AD21790287300C6DF8F /* UIViewController+MN.h */,
+				FEE70AD31790287300C6DF8F /* UIViewController+MN.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -352,6 +373,7 @@
 				FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */,
 				FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */,
 				FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */,
+				FEE70AD41790287300C6DF8F /* UIViewController+MN.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
