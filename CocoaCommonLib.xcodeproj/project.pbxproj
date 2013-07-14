@@ -17,6 +17,7 @@
 		FE25477117892DD600DF3C3D /* libCocoaCommonLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE25475817892DD600DF3C3D /* libCocoaCommonLib.a */; };
 		FE25477717892DD600DF3C3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE25477517892DD600DF3C3D /* InfoPlist.strings */; };
 		FE25477A17892DD600DF3C3D /* CocoaCommonLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE25477917892DD600DF3C3D /* CocoaCommonLibTests.m */; };
+		FE7592701792BD3A0018D4AB /* UIModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75926F1792BD3A0018D4AB /* UIModelList.m */; };
 		FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD01789321B00D1ADDA /* NSDate+MN.m */; };
 		FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */; };
 		FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD71789322D00D1ADDA /* ModelManager.m */; };
@@ -63,6 +64,9 @@
 		FE25477617892DD600DF3C3D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE25477817892DD600DF3C3D /* CocoaCommonLibTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaCommonLibTests.h; sourceTree = "<group>"; };
 		FE25477917892DD600DF3C3D /* CocoaCommonLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaCommonLibTests.m; sourceTree = "<group>"; };
+		FE75926E1792BD3A0018D4AB /* UIModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelList.h; sourceTree = "<group>"; };
+		FE75926F1792BD3A0018D4AB /* UIModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModelList.m; sourceTree = "<group>"; };
+		FE7592901792BF900018D4AB /* CoreDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataProtocol.h; sourceTree = "<group>"; };
 		FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MN.h"; sourceTree = "<group>"; };
 		FED7DDD01789321B00D1ADDA /* NSDate+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MN.m"; sourceTree = "<group>"; };
 		FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MN.h"; sourceTree = "<group>"; };
@@ -175,12 +179,15 @@
 		FED7DDCA1789319900D1ADDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE75926E1792BD3A0018D4AB /* UIModelList.h */,
+				FE75926F1792BD3A0018D4AB /* UIModelList.m */,
 				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 				FED7DDD61789322D00D1ADDA /* ModelManager.h */,
 				FED7DDD71789322D00D1ADDA /* ModelManager.m */,
 				FE22636F1792817A00BDA527 /* MNTestUtil.h */,
 				FE2263701792817A00BDA527 /* MNTestUtil.m */,
 				FED7DDCC178931F000D1ADDA /* Utils */,
+				FE7592901792BF900018D4AB /* CoreDataProtocol.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -378,6 +385,7 @@
 				FE2263711792817A00BDA527 /* MNTestUtil.m in Sources */,
 				FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */,
 				FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */,
+				FE7592701792BD3A0018D4AB /* UIModelList.m in Sources */,
 				FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */,
 				FEE70AD41790287300C6DF8F /* UIViewController+MN.m in Sources */,
 			);
