@@ -9,16 +9,7 @@
 #import "NSManagedObjectContext+MN.h"
 
 @implementation NSManagedObjectContext (MN)
-static const NSString* NSManagedObjectContextUserInfoKeyIsMerging = @"NSManagedObjectContextUserInfoKeyIsMerging";
 
-- (void)setIsMerging:(BOOL)isMerging{
-    [self.userInfo setObject:@(isMerging) forKey:NSManagedObjectContextUserInfoKeyIsMerging];
-}
-
-- (BOOL)isMerging{
-    NSNumber* number = [self.userInfo objectForKey:NSManagedObjectContextUserInfoKeyIsMerging];
-    return number.boolValue;
-}
 
 -(id)single:(NSFetchRequest *)request{
     NSError *error = nil;
