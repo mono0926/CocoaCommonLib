@@ -18,6 +18,9 @@
 		FE25477717892DD600DF3C3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE25477517892DD600DF3C3D /* InfoPlist.strings */; };
 		FE25477A17892DD600DF3C3D /* CocoaCommonLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE25477917892DD600DF3C3D /* CocoaCommonLibTests.m */; };
 		FE7592701792BD3A0018D4AB /* UIModelList.m in Sources */ = {isa = PBXBuildFile; fileRef = FE75926F1792BD3A0018D4AB /* UIModelList.m */; };
+		FE8EC9B317D2CBD700B48F6B /* JSONClientBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8EC9B217D2CBD700B48F6B /* JSONClientBase.m */; };
+		FE8EC9B617D2CC1B00B48F6B /* NSData+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8EC9B517D2CC1B00B48F6B /* NSData+MN.m */; };
+		FE8EC9BA17D2CE8E00B48F6B /* NSString+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8EC9B917D2CE8E00B48F6B /* NSString+MN.m */; };
 		FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD01789321B00D1ADDA /* NSDate+MN.m */; };
 		FED7DDD51789321B00D1ADDA /* NSManagedObjectContext+MN.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */; };
 		FED7DDD81789322D00D1ADDA /* ModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FED7DDD71789322D00D1ADDA /* ModelManager.m */; };
@@ -67,6 +70,13 @@
 		FE75926E1792BD3A0018D4AB /* UIModelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIModelList.h; sourceTree = "<group>"; };
 		FE75926F1792BD3A0018D4AB /* UIModelList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIModelList.m; sourceTree = "<group>"; };
 		FE7592901792BF900018D4AB /* CoreDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataProtocol.h; sourceTree = "<group>"; };
+		FE8EC9B117D2CBD700B48F6B /* JSONClientBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONClientBase.h; sourceTree = "<group>"; };
+		FE8EC9B217D2CBD700B48F6B /* JSONClientBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONClientBase.m; sourceTree = "<group>"; };
+		FE8EC9B417D2CC1B00B48F6B /* NSData+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MN.h"; sourceTree = "<group>"; };
+		FE8EC9B517D2CC1B00B48F6B /* NSData+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MN.m"; sourceTree = "<group>"; };
+		FE8EC9B717D2CCE200B48F6B /* CommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		FE8EC9B817D2CE8E00B48F6B /* NSString+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MN.h"; sourceTree = "<group>"; };
+		FE8EC9B917D2CE8E00B48F6B /* NSString+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MN.m"; sourceTree = "<group>"; };
 		FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MN.h"; sourceTree = "<group>"; };
 		FED7DDD01789321B00D1ADDA /* NSDate+MN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MN.m"; sourceTree = "<group>"; };
 		FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MN.h"; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 		FE25475D17892DD600DF3C3D /* CocoaCommonLib */ = {
 			isa = PBXGroup;
 			children = (
+				FE8EC9B017D2CBA300B48F6B /* ApiClient */,
 				FEE70AD01790283900C6DF8F /* View */,
 				FED7DDCA1789319900D1ADDA /* Model */,
 				FE25475E17892DD600DF3C3D /* Supporting Files */,
@@ -176,12 +187,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE8EC9B017D2CBA300B48F6B /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				FE8EC9B117D2CBD700B48F6B /* JSONClientBase.h */,
+				FE8EC9B217D2CBD700B48F6B /* JSONClientBase.m */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
 		FED7DDCA1789319900D1ADDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 				FE75926E1792BD3A0018D4AB /* UIModelList.h */,
 				FE75926F1792BD3A0018D4AB /* UIModelList.m */,
-				FED7DDD91789326E00D1ADDA /* MNCommonModel.h */,
 				FED7DDD61789322D00D1ADDA /* ModelManager.h */,
 				FED7DDD71789322D00D1ADDA /* ModelManager.m */,
 				FE22636F1792817A00BDA527 /* MNTestUtil.h */,
@@ -195,10 +215,15 @@
 		FED7DDCC178931F000D1ADDA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */,
-				FED7DDD01789321B00D1ADDA /* NSDate+MN.m */,
+				FE8EC9B717D2CCE200B48F6B /* CommonUtils.h */,
 				FED7DDD11789321B00D1ADDA /* NSManagedObjectContext+MN.h */,
 				FED7DDD21789321B00D1ADDA /* NSManagedObjectContext+MN.m */,
+				FED7DDCF1789321B00D1ADDA /* NSDate+MN.h */,
+				FED7DDD01789321B00D1ADDA /* NSDate+MN.m */,
+				FE8EC9B417D2CC1B00B48F6B /* NSData+MN.h */,
+				FE8EC9B517D2CC1B00B48F6B /* NSData+MN.m */,
+				FE8EC9B817D2CE8E00B48F6B /* NSString+MN.h */,
+				FE8EC9B917D2CE8E00B48F6B /* NSString+MN.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -388,6 +413,9 @@
 				FE7592701792BD3A0018D4AB /* UIModelList.m in Sources */,
 				FED7DDD41789321B00D1ADDA /* NSDate+MN.m in Sources */,
 				FEE70AD41790287300C6DF8F /* UIViewController+MN.m in Sources */,
+				FE8EC9B317D2CBD700B48F6B /* JSONClientBase.m in Sources */,
+				FE8EC9BA17D2CE8E00B48F6B /* NSString+MN.m in Sources */,
+				FE8EC9B617D2CC1B00B48F6B /* NSData+MN.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

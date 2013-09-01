@@ -37,9 +37,11 @@
 }
 
 -(NSFetchedResultsController *)fetchedResultsController {
+    NSError* error;
     if (_fetchedResultsController) {
 #warning なぜか必要
-        [_fetchedResultsController performFetch:nil];
+        BOOL succeeded = [_fetchedResultsController performFetch:&error];
+        NSAssert(succeeded, error.description);
         return _fetchedResultsController;
     }
     _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:self.request
@@ -47,7 +49,6 @@
                                                                       sectionNameKeyPath:self.sectionName
                                                                                cacheName:self.cacheName];
     _fetchedResultsController.delegate = self.delegate;
-    NSError* error;
     BOOL succeeded = [_fetchedResultsController performFetch:&error];
     NSAssert(succeeded, error.description);
     return _fetchedResultsController;

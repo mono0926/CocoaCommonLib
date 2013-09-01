@@ -9,5 +9,6 @@
 #import <CoreData/CoreData.h>
 #import "ModelManager.h"
 #import "MNTestUtil.h"
+#import "CommonUtils.h"
 #import "UIModelList.h"
 #import "CoreDataProtocol.h"
