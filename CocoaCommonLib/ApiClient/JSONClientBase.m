@@ -11,15 +11,21 @@
 
 @interface JSONClientBase ()
 @property (nonatomic) NSString* baseUrl;
+@property (nonatomic) NSString* path;
 @end
 
 @implementation JSONClientBase
 
 -(id)initWithBaseUrl:(NSString*)baseUrl
+                path:(NSString*)path
+         accessToken:(NSString*)accessToken
 {
     self = [super init];
     if (self) {
         _baseUrl = baseUrl;
+        _path = path;
+        assert(_path);
+        _accessToken = accessToken;
     }
     return self;
 }
@@ -50,7 +56,7 @@
 -(NSURLRequest*)makeRequestWithJsonString:(NSString*)jsonString
 {
     NSData *requestData = jsonString.encodeWithUTF8;
-    NSString* urlString = [_baseUrl stringByAppendingString:@"users"];
+    NSString* urlString = [_baseUrl stringByAppendingString:_path];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]
                                                            cachePolicy:NSURLRequestUseProtocolCachePolicy
                                                        timeoutInterval:15.0];
@@ -58,6 +64,9 @@
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@(requestData.length).stringValue forHTTPHeaderField:@"Content-Length"];
     request.HTTPBody = requestData;
+    
+    [request setValue:_accessToken forHTTPHeaderField:@"Authorization"];
+    
     return request;
 }
 @end
