@@ -13,4 +13,12 @@
 {
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
+
++(NSString*)uuidString {
+    CFUUIDRef uuid = CFUUIDCreate(nil);
+    NSString *str = (__bridge_transfer NSString*)CFUUIDCreateString(nil, uuid);
+    CFRelease(uuid);
+    // 小文字に変換
+    return [str lowercaseString];
+}
 @end

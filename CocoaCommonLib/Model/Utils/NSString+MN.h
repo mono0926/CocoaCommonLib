@@ -10,4 +10,5 @@
 
 @interface NSString (MN)
 @property (nonatomic, readonly) NSData* encodeWithUTF8;
++(NSString*)uuidString;
 @end
